@@ -337,7 +337,7 @@ Feature: Default
 		Given user should go login page
 		    When User enters "<valid password>" password credentials in password box
 		    And User clicks login button to login
-		    Then "Please fill out this field" message should be displayed in email box
+		    Then "Lütfen bu alanı doldurun." message should be displayed in email box
 		
 		    Examples:
 		      | valid password |

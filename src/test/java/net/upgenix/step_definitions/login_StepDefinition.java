@@ -9,6 +9,7 @@ import net.upgenix.pages.loginPage;
 import net.upgenix.utilities.ConfigurationReader;
 import net.upgenix.utilities.Driver;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -70,9 +71,8 @@ public class login_StepDefinition {
 
     @Then("{string} message should be displayed in email box")
     public void messageShouldBeDisplayedInEmailBox(String arg0) {
-        // i can not locate alert
-        Assert.assertTrue(Driver.getDriver().getTitle().equals(ConfigurationReader.getProperty("loginTitle")));
-
+       String message = Driver.getDriver().findElement(By.name("login")).getAttribute("validationMessage");
+        Assert.assertEquals(message,arg0);
     }
 
     @When("User should click Reset password link.")
