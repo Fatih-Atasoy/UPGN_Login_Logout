@@ -12,4 +12,9 @@ public class accountPage {
 
     @FindBy(xpath = "//span[@class='oe_topbar_name']")
     public WebElement accountName;
+
+
+
+    @FindBy(xpath = "//a[@data-menu='logout']")
+    public WebElement logoutButton;
 }

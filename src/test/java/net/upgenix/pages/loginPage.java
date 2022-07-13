@@ -24,4 +24,14 @@ public class loginPage {
 
     @FindBy(xpath = "//a[.='Reset Password']")
     public WebElement resetPasswordButton;
+
+
+
+
+
+
+
+
+
+
 }
