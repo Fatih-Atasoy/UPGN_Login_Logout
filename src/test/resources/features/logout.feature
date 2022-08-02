@@ -1,4 +1,4 @@
-@UPGN-266
+@UPGN-266 @smoke
 Feature: Default
 
 	#As a user, I should be able to log out.
