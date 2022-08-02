@@ -1,4 +1,4 @@
-@UPGN-262
+@UPGN-262  @smoke
 Feature: Default
 
 	#As a user, I should be able to log in so that I can land on homepage.
